@@ -16,5 +16,10 @@ namespace QLKS
         {
             InitializeComponent();
         }
+
+        private void CustomerDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

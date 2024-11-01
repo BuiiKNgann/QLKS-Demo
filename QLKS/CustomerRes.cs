@@ -90,6 +90,9 @@ namespace QLKS
             // Lấy giá trị ngày check-in
             customer.checkin = txtCheckIn.Value.Date;
 
+            // Lấy giá trị ngày check-out
+            customer.checkout = txtCheckOut.Value.Date;
+
             // Kiểm tra và lấy giá trị roomid
             if (!int.TryParse(cmbRoomId.SelectedItem?.ToString(), out var roomId) || roomId < 0)
             {
@@ -98,7 +101,6 @@ namespace QLKS
             }
             customer.roomid = roomId;
         }
-
         public void SetDataToText()
         {
             if (customer == null)
@@ -116,6 +118,7 @@ namespace QLKS
             txtIDProof.Text = !string.IsNullOrWhiteSpace(customer.idproof) ? customer.idproof : string.Empty;
             txtAddress.Text = !string.IsNullOrWhiteSpace(customer.address) ? customer.address : string.Empty;
             txtCheckIn.Value = customer.checkin != DateTime.MinValue ? customer.checkin : DateTime.Today;
+            txtCheckOut.Value = customer.checkout ?? DateTime.Today;
             cmbRoomId.SelectedItem = customer.roomid > 0 ? customer.roomid.ToString() : null;
 
             // Lấy thông tin phòng từ RoomController dựa trên roomid của khách hàng

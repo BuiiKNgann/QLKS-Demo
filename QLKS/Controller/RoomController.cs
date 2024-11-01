@@ -10,7 +10,7 @@ namespace QLKS.Controller
 {
     internal class RoomController : IController
     {
-        readonly string connectionString = "server=NGANBUI2003; Initial Catalog=Hotel; Integrated Security=True; TrustServerCertificate=True;";
+        readonly string connectionString = "server=NGANBUI2003; Initial Catalog=Hotel_Manager; Integrated Security=True; TrustServerCertificate=True;";
         List<IModel> rooms = new List<IModel>();
 
         public List<IModel> Items => rooms;

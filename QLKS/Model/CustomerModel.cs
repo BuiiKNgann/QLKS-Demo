@@ -17,9 +17,9 @@ namespace QLKS.Model
         public string idproof { get; set; }           // idproof
         public string address { get; set; }           // address
         public DateTime checkin { get; set; }         // checkin
-        public DateTime? checkout { get; set; }       // checkout (nullable, since customer may not have checked out)
-        public string checkoutStatus { get; set; }    // checkoutStatus
-        public int roomid { get; set; }               // roomid (foreign key)
+        public DateTime? checkout { get; set; }       
+  
+        public int roomid { get; set; }               
         public bool IsValidate()
         {
           return true;

@@ -11,7 +11,7 @@ namespace QLKS.Controller
 {
     internal class EmployeeController : IController
     {
-        readonly string connectionString = "server=NGANBUI2003; Initial Catalog=Hotel; Integrated Security=True; TrustServerCertificate=True;";
+        readonly string connectionString = "server=NGANBUI2003; Initial Catalog=Hotel_Manager; Integrated Security=True; TrustServerCertificate=True;";
         List<IModel> employees = new List<IModel>();
 
         public List<IModel> Items => employees;

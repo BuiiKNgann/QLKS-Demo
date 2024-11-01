@@ -58,11 +58,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtCheckOut = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.txtCheckOut);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnAllotCustomer);
             this.panel1.Controls.Add(this.txtPrice);
@@ -360,7 +364,7 @@
             this.txtDob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtDob.Name = "txtDob";
-            this.txtDob.Size = new System.Drawing.Size(611, 68);
+            this.txtDob.Size = new System.Drawing.Size(528, 68);
             this.txtDob.TabIndex = 38;
             this.txtDob.Value = new System.DateTime(2024, 10, 31, 7, 39, 57, 682);
             // 
@@ -517,6 +521,32 @@
             // 
             this.guna2Elipse1.BorderRadius = 30;
             // 
+            // txtCheckOut
+            // 
+            this.txtCheckOut.Checked = true;
+            this.txtCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.txtCheckOut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheckOut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtCheckOut.Location = new System.Drawing.Point(628, 600);
+            this.txtCheckOut.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCheckOut.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtCheckOut.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtCheckOut.Name = "txtCheckOut";
+            this.txtCheckOut.Size = new System.Drawing.Size(559, 68);
+            this.txtCheckOut.TabIndex = 55;
+            this.txtCheckOut.Value = new System.DateTime(2024, 10, 31, 7, 39, 57, 682);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(624, 564);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 23);
+            this.label14.TabIndex = 56;
+            this.label14.Text = "Ngày đi";
+            // 
             // CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -565,5 +595,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private System.Windows.Forms.Label label14;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckOut;
     }
 }
